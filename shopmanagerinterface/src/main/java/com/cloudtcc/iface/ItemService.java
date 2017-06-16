@@ -1,5 +1,6 @@
 package com.cloudtcc.iface;
 
+import com.cloudtcc.common.pojo.PageBean;
 import com.cloudtcc.pojo.TbItem;
 
 /**
@@ -7,4 +8,5 @@ import com.cloudtcc.pojo.TbItem;
  */
 public interface ItemService {
     public TbItem getItemById(Long itemId);
+    public PageBean getItemList(int page, int rows);
 }

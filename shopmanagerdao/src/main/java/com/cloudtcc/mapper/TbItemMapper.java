@@ -3,7 +3,6 @@ package com.cloudtcc.mapper;
 import com.cloudtcc.pojo.TbItem;
 import com.cloudtcc.pojo.TbItemExample;
 import org.apache.ibatis.annotations.Param;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
 

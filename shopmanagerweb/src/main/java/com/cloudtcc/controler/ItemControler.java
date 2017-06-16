@@ -1,5 +1,6 @@
 package com.cloudtcc.controler;
 
+import com.cloudtcc.common.pojo.PageBean;
 import com.cloudtcc.iface.ItemService;
 import com.cloudtcc.pojo.TbItem;
 import org.springframework.stereotype.Controller;
@@ -25,5 +26,11 @@ public class ItemControler {
         TbItem item = itemService.getItemById(itemId);
         System.out.println(item);
        return item;
+    }
+
+    @RequestMapping("/item/list")
+    @ResponseBody
+    public PageBean getItemList(Integer page, Integer rows){
+        return  itemService.getItemList(page,rows);
     }
 }

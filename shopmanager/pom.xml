@@ -17,7 +17,6 @@
         <module>../shopmanagerdao</module>
         <module>../shopmanagerinterface</module>
         <module>../shopmanagerservice</module>
-        <module>../shopmanagerweb</module>
     </modules>
 
     <dependencies>
